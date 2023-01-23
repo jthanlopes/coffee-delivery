@@ -9,6 +9,7 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <RouterProvider router={router} />
+
       <GlobalStyles />
     </ThemeProvider>
   )
