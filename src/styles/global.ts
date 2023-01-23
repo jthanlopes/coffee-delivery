@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: ${theme => theme.theme.background};
+    background-color: ${props => props.theme.background};
     -webkit-font-smoothing: antialiased;
   }
 
@@ -27,6 +27,11 @@ export const GlobalStyles = createGlobalStyle`
 
   button {
     cursor: pointer;
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
   }
 
   @media(max-width: 768px) {
