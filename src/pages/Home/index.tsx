@@ -1,4 +1,4 @@
-import { IntroBlock, HomeContainer } from "./styles";
+import { HomeContainer, IntroBlock, IntroBlockItems, IconContainer } from "./styles";
 import { ShoppingCart, Package, Timer, Coffee } from "phosphor-react";
 
 import imgCoffee from '../../assets/img-coffee.png';
@@ -13,12 +13,12 @@ export function Home() {
             <p>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</p>
           </header>
 
-          <ul>
-            <li><span><ShoppingCart /></span> Compra simples e segura</li>
-            <li><span><Package /></span> Embalagem mantém o café intacto</li>
-            <li><span><Timer /></span> Entrega rápida e rastreada</li>
-            <li><span><Coffee /></span> O café chega fresquinho até você</li>
-          </ul>
+          <IntroBlockItems>
+            <li><IconContainer itemColor="#C47F17"><ShoppingCart /></IconContainer> Compra simples e segura</li>
+            <li><IconContainer itemColor="#574F4D"><Package /></IconContainer> Embalagem mantém o café intacto</li>
+            <li><IconContainer itemColor="#DBAC2C"><Timer /></IconContainer> Entrega rápida e rastreada</li>
+            <li><IconContainer itemColor="#8047F8"><Coffee /></IconContainer> O café chega fresquinho até você</li>
+          </IntroBlockItems>
         </div>
 
         <img src={imgCoffee} alt="Copo de café" />
