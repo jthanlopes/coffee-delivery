@@ -5,7 +5,7 @@ export const HomeContainer = styled.main`
   flex-direction: column;
 `
 
-export const IntroBlock = styled.div`
+export const IntroContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +30,7 @@ export const IntroBlock = styled.div`
   }
 `
 
-export const IntroBlockItems = styled.ul`
+export const IntroContainerItems = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
