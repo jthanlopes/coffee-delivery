@@ -1,7 +1,8 @@
-import { HomeContainer, IntroContainer, IntroContainerItems, IconContainer } from "./styles";
+import { HomeContainer, IntroContainer, IntroContainerItems, IconContainer, ProductsContainer } from "./styles";
 import { ShoppingCart, Package, Timer, Coffee } from "phosphor-react";
 
 import imgCoffee from '../../assets/img-coffee.png';
+import { ProductsList } from "./components/ProductsList";
 
 export function Home() {
   return (
@@ -23,6 +24,13 @@ export function Home() {
 
         <img src={imgCoffee} alt="Copo de café" />
       </IntroContainer>
+
+      <ProductsContainer>
+        <h2>Nossos cafés</h2>
+
+        <ProductsList />
+
+      </ProductsContainer>
     </HomeContainer>
   );
 }

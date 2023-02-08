@@ -64,3 +64,7 @@ export const IconContainer = styled.span<IconContainerProps>`
     color: white;
   }
 `
+
+export const ProductsContainer = styled.section`
+  margin-top: 6rem;
+`;
