@@ -1,9 +1,20 @@
 import { ProductItemContainer } from "./styles";
 
-export function ProductItem() {
+interface ProductItemProps {
+  id: number,
+  name: string;
+  description: string;
+  price: number,
+  categories: []
+}
+
+export function ProductItem({id, name, description, price, categories}: ProductItemProps) {
   return (
     <ProductItemContainer>
-      Produto teste
+      {name}
+      {description}
+      {price/100}
+      {categories}
     </ProductItemContainer>
   )
 }

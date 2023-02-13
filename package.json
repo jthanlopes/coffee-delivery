@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:server": "json-server db.json -w -d 2000",
+    "dev:server": "json-server db.json -w -d 6000",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
